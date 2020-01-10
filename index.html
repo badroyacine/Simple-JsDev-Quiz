@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <!-- top section -->
+  <div class="py-3 bg-white text-center">
+    <div class="container">
+      <h2 class="text-primary display-3 my-4">JavaScript Quiz</h2>
+    </div>
+  </div>
+
+  <!-- result section -->
+  <div class="result py-4 d-none bg-light text-center">
+    <div class="container lead">
+      <p>You score is <span class="text-primary display-4 p-3">0%</span></p>
+    </div>
+  </div>
+
+  <!-- quiz section -->
+  <div class="quiz py-4 bg-primary">
+    <div class="container">
+      <h2 class="my-5 text-white">Test your Javascript skills...</h2>
+
+      <form class="quiz-form text-light">
+        <div class="my-4">
+          <p class="lead font-weight-normal">1. Which attribute of the nodes of the DOM corresponds to the HTML attribute 'class'?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="A">
+            <label class="form-check-label">class</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">CLASS</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="C">
+            <label class="form-check-label">className</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="D">
+            <label class="form-check-label">classAttribut</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">2. Which of these types of events does not exist?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="A">
+            <label class="form-check-label">blur</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">load</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="C">
+            <label class="form-check-label">mouseclick</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="D">
+            <label class="form-check-label">mouseout</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">3. Which method does not exist in the DOM?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="A">
+            <label class="form-check-label">document.getElementsByAttribute</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label">document.getElementsByTagName</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="C">
+            <label class="form-check-label">document.getElementsByClassName</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="D">
+            <label class="form-check-label">document.getElementById</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">4. Which of these propositions is a valid variable name in JS?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="A">
+            <label class="form-check-label">var</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label">$b</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="C">
+            <label class="form-check-label">default</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="D">
+            <label class="form-check-label">2a</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">5. Which method compares two string?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="A">
+            <label class="form-check-label">charAt()</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="B">
+            <label class="form-check-label">charCodeAt()</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="C">
+            <label class="form-check-label">indexOf()</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="D">
+            <label class="form-check-label">localeCompare()</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">6. What is the equivalent for a node of the DOM of node.childNodes[1]?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="A">
+            <label class="form-check-label">node.firstChild</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="B">
+            <label class="form-check-label">node.firstChild.nextSibling</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="C">
+            <label class="form-check-label">node.previousSibling.parentNode</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="D">
+            <label class="form-check-label">node.lastChild.previousSibling</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">7. In a loop, the 'continue' instruction allows to?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="A">
+            <label class="form-check-label">continue executing the code after the loop</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="B">
+            <label class="form-check-label">go to the next iteration</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="C">
+            <label class="form-check-label">return to the start of the current iteration</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="D">
+            <label class="form-check-label">delete all global variables</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">8. Which of these syntaxes is correct?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="A">
+            <label class="form-check-label">if (a != 2) {}</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="B">
+            <label class="form-check-label">if a != 2 {}</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="C">
+            <label class="form-check-label">if (a <> 2) {}</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="D">
+            <label class="form-check-label">if a <> 2 {}</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">9. window.i = 0; var i = 2; alert (window.i); : what will this code display?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="A">
+            <label class="form-check-label">0</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="B">
+            <label class="form-check-label">2</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="C">
+            <label class="form-check-label">null</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="D">
+            <label class="form-check-label">undefined</label>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="lead font-weight-normal">10. When we press a character on the keyboard, which sequence of events is generated?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="A">
+            <label class="form-check-label">keypress / keydown / keyup</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="B">
+            <label class="form-check-label">keyup / keydown / keypress</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="C">
+            <label class="form-check-label">keydown / keypress / keyup</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="D">
+            <label class="form-check-label">keydown / keyup / keypress</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <input type="submit" class="btn btn-light" value="Validate"> 
+        </div>
+      </form>
+
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
