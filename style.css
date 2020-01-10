@@ -1,0 +1,15 @@
+.text-primary-color { color: #F0DB4F; }
+.text-secondary-color { color: #323330; }
+.text-secondary-color-85 { color: rgba(50,51,48, 0.85); }
+
+.bg-primary-color { background-color: #F0DB4F; }
+.bg-secondary-color { background-color: #323330; }
+.bg-secondary-color-85 { background-color: rgba(50,51,48, 0.85); }
+
+.btn-dark{
+  color: #F0DB4F;
+  width: 15%;
+  font-weight: bold;
+}
+
+.btn-dark:hover { color: #F0DB4F; }
